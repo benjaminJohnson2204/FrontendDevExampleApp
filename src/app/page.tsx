@@ -9,7 +9,7 @@ export default function Home() {
   const [isTimerRunning, setIsTimerRunning] = useState(false);
   const [timerTimeout, setTimerTimeout] = useState<null | NodeJS.Timeout>(null);
 
-  const formatTimeSection = (section) => {
+  const formatTimeSection = (section: number) => {
     if (section < 10) {
       return `0${section}`;
     }
